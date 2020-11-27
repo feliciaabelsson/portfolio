@@ -1,0 +1,73 @@
+
+.contact-contact-page {
+    display: flex;
+    background: #ffcdb2;
+    padding: 6rem 15rem;
+    justify-content: space-evenly;
+    gap: 3rem;
+    min-height: 75vh;
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+.contact-me-container {
+    text-align: center;
+}
+
+.contact-title {
+    font-family: var(--LatoBlack);
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+.about-me-title {
+    text-align: left;
+    margin: 0;
+}
+
+.contact-me-title {
+    margin: 0;
+}
+
+.contact-me-info {
+    margin-bottom: 3rem;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    position: relative;
+}
+
+.about-me-p,
+.contact-me-text,
+.contact-me-info {     
+    line-height: 1.5rem;
+}
+
+.contact-me-info {
+    margin-top: 1.5rem;
+}
+
+.about-me-pic {
+    max-height: 22rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.check-icon {
+    max-width: 30px;
+    margin-left: 4rem;
+}
+
+.check-p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--LatoBlack);
+    letter-spacing: .5px;
+}
+
