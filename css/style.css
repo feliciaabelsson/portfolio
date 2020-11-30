@@ -88,16 +88,6 @@ button.btn {
     cursor: pointer;
 }
 
-.mainBoxWork {
-    margin: 0 5rem;
-}
-
-.main-text {
-    margin: 0 10rem;
-    font-size: 16px;
-    line-height: 25px;
-    font-family: var(--Lato);
-}
 /*-----------Navbar-----------*/
 
 .nav {
@@ -115,8 +105,8 @@ button.btn {
 }
 
 .nav .toggle-collapse {
-    position: absolute;
-    top:0%;
+    /* position: absolute; */
+    /* top:0%; */
     width: 90%;
     cursor: pointer;
     display: none;
@@ -326,6 +316,15 @@ button.btn {
 }
 
 
+h3 span img {
+    max-width: 30px;
+}
+
+.website-title {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
 
 .content-box {
     min-height: 100%;  
@@ -356,19 +355,29 @@ button.btn {
 }
 
 
-
-/*Big picture front page*/
-.content-pic1 {
-    position: relative;
-    width: 80%;
-    margin: 0 5%;
-    cursor: pointer;
+/* Grafiska skapanden */
+.graphic-works-container {
+    max-width: 1020px;
+    margin: 0 auto;
 }
 
-.centerImg {
-    display: block;
-    width: 100%;
-    height: auto;
+.graphic-works-title {
+    padding-bottom: 3rem;
+}
+
+.graphic-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.graphic-image {
+    max-width: 100%;
+}
+
+.graphic-elements-big {
+    position: relative;
+    grid-column: 1/4;
 }
 
 .overlay {
@@ -384,34 +393,27 @@ button.btn {
     background-color: var(--light-blue);
 }
 
-.content-pic1:hover .overlay {
+.graphic-elements-big:hover .overlay {
     opacity: 1;
 }
 
-.bigger-pic-title {
+.bigger-title {
     font-size: 2rem;
     transition: all .5s ease-in-out;
 }
 
-.content-pic1:hover .bigger-pic-title {
+.graphic-elements-big:hover .bigger-title {
     transform: scale(1.8);
 }
 
 /*Small pictures front page*/
-
-.content-pic {
+.graphic-elements-small {
     position: relative;
     cursor: pointer;
     width: 100%;
 }
 
-.smallImg {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.overlaySmall {
+.overlay-small {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -424,11 +426,11 @@ button.btn {
     background-color: var(--light-blue);
 }
 
-.content-pic:hover .overlaySmall {
+.graphic-elements-small:hover .overlay-small {
     opacity: 1;
 }
 
-.work1text  {
+.graphic-image-title  {
     color: white;
     position: relative;
     text-align: center;
@@ -441,45 +443,12 @@ button.btn {
     transition: all .5s ease-in-out;
 }
 
-.content-pic:hover .work1text {
+.graphic-elements-small:hover .graphic-image-title {
     transform: scale(1.2);
-}
-
-h3 span img {
-    max-width: 30px;
-}
-
-.website-title {
-    display: flex;
-    gap: .5rem;
-    align-items: center;
-}
-
-.overlay .btn {
-    position: relative;
-    left: 40%;
-    top: 200px;
-    margin: 1.8rem;
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-}
-
-
-.overlay .btn:hover {
-    background: transparent;
-    border: 2px solid black;
-    color: black;
-    
-}
-
-.content-box .content .content-work .content-pic img {
-    width: 100%;
 }
 
 
 /*---x-- Content ----x---*/
-
 
 /*------------- About Me -----------------*/
 
@@ -557,12 +526,6 @@ h3 span img {
 }
 
 
-
-/*-----x-----Contact---------x------*/
-
-/*----x---Main content-----x---*/
-
-
 /*--------- Footer ------------*/
 
 footer .main-footer {
@@ -593,14 +556,13 @@ footer .main-footer .footer-content .footer-copy {
         font-size:1rem;
     }
 
-    p {
-        font-size: 12px;
-        line-height: 15px;
-    }
-
     button.btn{
         font-size: 0.5em;
         padding: 2em 6em;
+    }
+
+    .nav {
+        padding: 0 1rem;
     }
 
     .nav .nav-menu, .nav .nav-items{
@@ -614,7 +576,13 @@ footer .main-footer .footer-content .footer-copy {
     .container {
         background: transparent;
         height: auto;
+        flex-direction: column;
     }  
+
+    .pic {
+        padding-top: 2rem;
+        margin: 0 1rem;
+    }
 
     .site-title .site-background {
         padding-top: 0em;
@@ -625,6 +593,27 @@ footer .main-footer .footer-content .footer-copy {
         margin: 0;
     }
 
+    .site-title .site-intro {
+        margin: 0 2em;
+    }
+
+    .flex-row {
+        display: block;
+    }
+
+    /* My Websites */
+    .my-work-wrapper article {
+        flex-direction: column;
+    }
+
+    .image-computer {
+        order: 1;
+    }
+
+    #work-2 div {
+        order: 2;
+    }
+
     .contact-text {
         text-align: center;
         margin: 0;
@@ -633,14 +622,42 @@ footer .main-footer .footer-content .footer-copy {
         margin: 0 2em;
     }
 
-    .site-title .site-intro {
-        line-height: 16px;
-        margin: 0 2em;
-    }
-
     .content-box .content .content-work {
         flex-direction: column;
     }
+
+    .my-work-wrapper article {
+        padding: 4rem 1rem;
+    }
+
+    .my-work-wrapper article a{
+        padding-bottom: 3rem;
+        padding-top: 2rem;
+    }
+
+    .website-title span {
+       padding-right: .5rem;
+    }
+
+    /* Graphic Elements */
+    .graphic-content {
+       margin: 0 1rem;
+    }
+
+    .graphic-elements-small {
+        grid-column: 1/4;
+    }
+
+   
+
 }
 
-/*    x    Viewport less then or equal to 750px   x    */
+
+
+
+
+
+
+
+
+

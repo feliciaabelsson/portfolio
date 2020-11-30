@@ -23,7 +23,7 @@
             <!--toggle menu for small screens-->
             <div class="toggle-collapse">
                 <div class="toggle-icons">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars" id="burger"></i>
                 </div>
             </div>
            
@@ -124,7 +124,7 @@
                         </svg>
                     </a>
                 </div>
-                <a href="https://rebeccahellsing.github.io/cosmoproject/" target="_blank">
+                <a class="image-computer" href="https://rebeccahellsing.github.io/cosmoproject/" target="_blank">
                     <img src="./assets/cosmopolitan.png" class="img" alt="cosmopolitan project">
                 </a>
             </article>
@@ -154,61 +154,52 @@
             </article>
         </section>
 
-
-
-        <!--Grafiska element-->
-        <section class="content">
-            <h2 id="content-title" class="content-title">Grafiska skapanden</h2>
-                <div class="content-work">
+        <section class="graphic-works-container">
+            <h2 id="content-title" class="content-title graphic-works-title">Grafiska skapanden</h2>
+                <div class="graphic-content">
                     <!--weatherapp-->
-                    <a class="content-pic1" href="./pages/weatherApp.html">
-                        <div>
-                            <img src="./assets/newphone.png" alt="prototyp av mobilapp" class="centerImg">
-                            <div class="overlay">
-                                <h3 class="work1text bigger-pic-title">Väderapp</h3>
-                                <!-- <button onclick="window.location.href='./pages/weatherApp.html'" class="btn">Läs mer</button> -->
-                            </div>
+                    <a class="graphic-elements-big" href="./pages/weatherApp.html">
+                        <img src="./assets/newphone.png" alt="prototyp av mobilapp" class="graphic-image">
+                        <div class="overlay">
+                            <h3 class="graphic-image-title bigger-title">Väderapp</h3>
+                            <!-- <button onclick="window.location.href='./pages/weatherApp.html'" class="btn">Läs mer</button> -->
                         </div>
                     </a>
                     <!--Book-->
-                    <a href="./pages/bookCover.html" class="content-pic">
-                        <div>
-                            <img src="./assets/books-portfolio.png" alt="smallImg">
-                            <div class="overlaySmall">
-                                <h3 class="work1text">Bokomslag</h3>
-                            </div>
-                        </div>
+                    <a href="./pages/bookCover.html" class="graphic-elements-small">
+                        <img src="./assets/books-portfolio.png" alt="book cover" class="graphic-image">
+                        <div class="overlay-small">
+                            <h3 class="graphic-image-title">Bokomslag</h3>
+                        </div>   
                     </a>
                     <!--Ice bear-->
-                    <a class="content-pic" href="./pages/informationsgrafik.html">
-                        <div>
-                            <img src="./assets/icebear.png" alt="">
-                            <div class="overlaySmall">
-                                <h3 class="work1text">Informations-<br><br>grafik</h3>
-                            </div>
+                    <a class="graphic-elements-small" href="./pages/informationsgrafik.html">
+                        <img src="./assets/icebear.png" alt="information graphic" class="graphic-image">
+                        <div class="overlay-small">
+                            <h3 class="graphic-image-title">Informations-<br><br>grafik</h3>
                         </div>
                     </a>
                     <!--Paper Article-->
-                    <a class="content-pic" href="./pages/tidningsartikel.html">
-                        <div>
-                            <img src="./assets/article.png" alt="">
-                            <div class="overlaySmall">
-                                <h3 class="work1text">Tidningsartikel</h3>
-                            </div>
+                    <a class="graphic-elements-small" href="./pages/tidningsartikel.html">
+                        <img src="./assets/article.png" alt="magazine article" class="graphic-image">
+                        <div class="overlay-small">
+                            <h3 class="graphic-image-title">Tidningsartikel</h3>
                         </div>
                     </a>
                     <!--Cosmo Header-->
-                    <a class="content-pic1" href="./pages/cosmoHeader.html">
-                        <div>
-                            <img src="./assets/cosmoheader.gif" alt="" class="centerImg">
-                                <div class="overlay">
-                                    <h3 class="work1text bigger-pic-title">Animerad header</h3>
-                                </div>
+                    <a class="graphic-elements-big" href="./pages/cosmoHeader.html">
+                        <img src="./assets/cosmoheader.gif" alt="header cosmopolitan" class="graphic-image">
+                        <div class="overlay">
+                            <h3 class="graphic-image-title bigger-title">Animerad header</h3>
                         </div>
                     </a>
                 </div>
         </section>
+        
     </div>
+   
+
+
 
 
     <!------- Get in touch ------->
@@ -244,10 +235,15 @@
   
     
 
+  
+ 
+  
+    
+
     <!--Jquery Library file-->
     <script src="./js/Jquery3.5.1.min.js"></script>
 
     <!--Custom Javascript file-->
-    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

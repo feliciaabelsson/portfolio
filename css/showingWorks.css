@@ -50,3 +50,42 @@ img:hover {
 .weather-app-box-last {
     margin-bottom: 6rem;
 }
+
+.small-screen-image {
+    display: none;
+}
+
+@media only screen and (max-width: 750px) { 
+    .work-content {
+        flex-direction: column;
+    }
+
+    .work-content section {
+        margin: 0 1rem;
+        padding-bottom: 3rem;
+    }
+
+
+    .article-img {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .work-content-rightsided {
+        display: flex;
+    }
+
+    .phone-right-sided {
+        padding-right: 4rem;
+    }
+
+    .small-screen-image {
+        display: block;
+    }
+
+    .big-screen-image {
+        display: none;
+    }
+
+
+}
