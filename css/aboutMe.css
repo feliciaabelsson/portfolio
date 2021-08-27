@@ -1,91 +1,100 @@
-
 .contact-contact-page {
-    display: flex;
-    background: #ffcdb2;
-    padding: 6rem 15rem;
-    justify-content: space-evenly;
-    gap: 3rem;
-    min-height: 75vh;
-    margin-bottom: 6rem;
-    position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #ffcdb2;
+  padding: 6rem 15rem;
+  justify-content: center;
+  gap: 3rem;
+  min-height: 75vh;
+  margin-bottom: 6rem;
+  position: relative;
 }
 
 .contact-me-container {
-    text-align: center;
+  text-align: center;
 }
 
 .contact-title {
-    font-family: var(--LatoBlack);
-    text-transform: uppercase;
-    padding-bottom: 2rem;
+  font-family: var(--LatoBlack);
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.about-me-container {
+  padding-bottom: 4rem;
 }
 
 .about-me-title {
-    text-align: left;
-    margin: 0;
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
 }
 
 .contact-me-title {
-    margin: 0;
+  margin: 0;
 }
 
 .contact-me-info {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .about-me-text {
-    display: flex;
-    flex-direction: column;
-    z-index: 100;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+  text-align: center;
+  max-width: 800px;
 }
 
 .about-me-p,
 .contact-me-text,
-.contact-me-info {     
-    line-height: 1.5rem;
+.contact-me-info {
+  line-height: 1.8rem;
 }
 
 .contact-me-info {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .about-me-pic {
-    max-height: 22rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
+  max-height: 22rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .check-icon {
-    max-width: 30px;
-    margin-left: 4rem;
+  max-width: 30px;
+  margin-left: 4rem;
 }
 
 .check-p {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-family: var(--LatoBlack);
-    letter-spacing: .5px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--LatoBlack);
+  letter-spacing: 0.5px;
 }
 
-@media only screen and (max-width: 750px) { 
-    .contact-contact-page {
-        flex-direction: column;
-        gap: 1rem;
-        padding: 5rem 1rem;
-    }
-    .about-me-pic {
-        display: none;
-    }
+@media only screen and (max-width: 750px) {
+  .contact-contact-page {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5rem 1rem;
+  }
+  .about-me-pic {
+    display: none;
+  }
 
-    .contact-me-container {
-        margin-top: 5rem;
-    }
+  .contact-me-container {
+    margin-top: 5rem;
+  }
 
-    .check-icon {
-        margin: 0;
-    }
+  .check-icon {
+    margin: 0;
+  }
 }
